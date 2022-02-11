@@ -1,0 +1,29 @@
+{
+  "name": "btrz-conversions",
+  "version": "1.0.0",
+  "description": "Unit conversion for weight and dimensions",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha --ui bdd",
+    "tdd": "node_modules/mocha/bin/mocha --ui bdd -w",
+    "preversion": "npm test",
+    "postversion": "git push origin master && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Betterez/btrz-conversions.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Betterez/btrz-conversions/issues"
+  },
+  "homepage": "https://github.com/Betterez/btrz-conversions#readme",
+  "devDependencies": {
+    "chai": "4.3.6",
+    "mocha": "9.2.0"
+  }
+}
